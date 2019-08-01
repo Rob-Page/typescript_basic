@@ -1,5 +1,4 @@
 import React from 'react';
-import { User, Chat as Chat_Model } from '../../utils/model';
 import { Comment, Icon, Avatar, Spin } from 'antd';
 import { Post } from '../Post';
 import './Chat.scss'
