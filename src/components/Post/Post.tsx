@@ -1,5 +1,5 @@
 import React from 'react';
-import { User, Post as Post_Model } from '../../utils/model';
+import { User, Post as Post_Model } from './../../utils/model';
 import { Comment, Icon, Avatar, Spin } from 'antd';
 import './Post.scss'
 
