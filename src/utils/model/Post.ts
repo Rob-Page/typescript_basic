@@ -8,6 +8,12 @@ export class Post {
         this.likes = likes;
         this.dislikes = dislikes;
     }
+    public like = () =>{
+        this.likes += 1;
+    }
+    public dislike = () =>{
+        this.dislikes += 1;
+    }
     public user: User;
     public text: string;
     public date: Date;

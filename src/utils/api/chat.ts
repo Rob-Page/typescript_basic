@@ -9,12 +9,12 @@ export const chatAPI = {
         const chat = new Chat(
             "Moving?",
             new Date("5-01-2019"),
-            [new Post(user1, "Hi KOF, can I move desks?", new Date("5-12-2019"), 1, 0)
-                , new Post(user1, "We are getting new ones next week!", new Date("5-12-2019"), 1, 0)
-                , new Post(user1, "So I can move?", new Date("5-12-2019"), 1, 0)
-                , new Post(user2, "You are going to need to talk to Caleb on that one, he is now over all phacility managment issues", new Date("5-12-2019"), 1, 0)
-                , new Post(user1, "Caleb, what do you think?", new Date("5-12-2019"), 1, 0)
-                , new Post(user3, "Not a chance.", new Date("5-12-2019"), 1, 0)
+            [new Post(user1, "Hi KOF, can I move desks?", new Date("5-12-2019"), 0, 0)
+                , new Post(user2, "We are getting new ones next week!", new Date("5-12-2019"), 1, 0)
+                , new Post(user1, "So I can move?", new Date("5-12-2019"), 0, 1)
+                , new Post(user2, "You are going to need to talk to Caleb on that one, he is now over all phacility managment issues", new Date("5-12-2019"), 1, 1)
+                , new Post(user1, "Caleb, what do you think?", new Date("5-12-2019"), 0, 0)
+                , new Post(user3, "Not a chance.", new Date("5-12-2019"), 0, 100)
                 , new Post(user1, "ok...", new Date("5-12-2019"), 1, 0)]
         );
         const promise = new Promise<Chat>(function (resolve, reject) {
