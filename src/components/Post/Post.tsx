@@ -8,7 +8,6 @@ interface IPostProps {
 };
 
 interface IPostState {
-    recentAction?: "liked" | "disliked"
 };
 
 export class Post extends React.Component<IPostProps, IPostState> {
@@ -17,10 +16,6 @@ export class Post extends React.Component<IPostProps, IPostState> {
         this.state = {
 
         }
-    }
-
-    public setRecentAction = (recentAction: "liked" | "disliked") => {
-        this.setState({ recentAction })
     }
 
     public componentWillMount = () => {
