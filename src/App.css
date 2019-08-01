@@ -1,11 +1,5 @@
-@import '~antd/dist/antd.css';
-
 .App {
   text-align: center;
-}
-
-.chat-container {
-  padding: 1em 2em;
 }
 
 .App-logo {
