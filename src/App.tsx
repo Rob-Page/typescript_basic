@@ -20,7 +20,7 @@ const App: React.FC = () => {
         </Layout.Header>
         <Layout.Content style={{ padding: '0 100px' }}>
           <div className="chat-container">
-            <Chat />
+            
           </div>
         </Layout.Content>
       </Layout>

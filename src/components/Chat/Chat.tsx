@@ -10,7 +10,7 @@ interface IChatProps {
 };
 
 interface IChatState {
-    
+
 };
 
 export class Chat extends React.Component<IChatProps, IChatState> {
@@ -25,6 +25,9 @@ export class Chat extends React.Component<IChatProps, IChatState> {
     }
 
     public render() {
-        return (<Post username="Rob" text="Hi there how's it going?" avatar="https://ca.slack-edge.com/T1DAWF55Z-UAQC13709-85d7a1c00242-48" />);
+        return (
+            <div className="chat">
+            </div>
+        );
     }
 };
