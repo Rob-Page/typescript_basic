@@ -4,7 +4,9 @@ import { Comment, Icon, Avatar, Spin } from 'antd';
 import './Post.scss'
 
 interface IPostProps {
-    post: Post_Model
+    text:string;
+    username:string;
+    avatar:string;
 };
 
 interface IPostState {
@@ -22,15 +24,16 @@ export class Post extends React.Component<IPostProps, IPostState> {
     }
 
     public render() {
-        if (this.props.post) {
+        if (this.props.text) {
             return (
                 <div className='post'>
                     <Comment
-                        content={(<p>{this.props.post.text}</p>)}
-                        author={this.props.post.user.name}
+                        content={(<p>{this.props.text}</p>)}
+                        // actions={}
+                        author={this.props.username}
                         avatar={
                             <Avatar
-                                src={this.props.post.user.avatar}
+                                src={this.props.avatar}
                             />
                         }
                     />
